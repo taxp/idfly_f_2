@@ -1,0 +1,114 @@
+body {
+  background-color: #DDDDDD;
+}
+
+.wrapper {
+  max-width: 1280px;
+  min-width: 320px;
+  margin: 30px auto;
+}
+.wrapper * {
+  transition: 1s;
+}
+
+.container {
+  width: 23%;
+  float: left;
+  height: 460px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tariff {
+  margin: 15px 5px;
+  font-family: sans-serif;
+  padding-bottom: 13px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+}
+.tariff:hover {
+  padding-bottom: 23px;
+}
+
+.tariff > div {
+  text-align: center;
+}
+
+.tariff > .header {
+  padding: 25px 0;
+  font-size: 33px;
+  color: #405482;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.tariff:hover > .header {
+  padding: 30px 0;
+  color: #FFFFFF;
+  background-color: #405482;
+}
+
+.tariff > .price {
+  padding: 10px 0;
+  background-color: #405482;
+  font-size: 20px;
+}
+.tariff:hover > .price {
+  background-color: #eb8f00;
+}
+
+.tariff > .price > .price-amount {
+  color: #FFFFFF;
+}
+
+.tariff > .price > .period {
+  color: #7C87A2;
+}
+.tariff:hover > .price > .period {
+  color: #FFFFFF;
+}
+
+.tariff > .options {
+  padding: 15px 0;
+}
+.tariff > .options > p {
+  margin: 17px 0;
+  font-size: 18px;
+}
+.tariff > .options .option-amount {
+  color: #405482;
+  font-weight: bold;
+}
+.tariff > .options .option-name {
+  color: #BBBBBB;
+}
+
+.tariff > .button {
+  width: 90%;
+  border-radius: 3px;
+  border: 2px solid #405482;
+  color: #405482;
+  font-size: 18px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+.tariff:hover > .button {
+  color: #FFFFFF;
+  background-color: #eb8f00;
+  border: none;
+}
+
+
+
+@media(max-width: 1024px){
+  .container {
+    width: 46%;
+  }
+}
+
+@media(max-width: 480px){
+  .container {
+    width: 93%;
+  }
+}
